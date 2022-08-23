@@ -61,9 +61,12 @@ namespace CarLotSimulator
 
             lot.Carlot.Add(ThirdCar);
 
+            Console.WriteLine($"Take a look at the number of cars: {CarLot.numberOfCars}");
+
+
             foreach (var car in lot.Carlot)
             {
-                Console.WriteLine($"{car.Make} {car.Model} {car.Year} {car.EngineNoise} {car.HonkNoise}");
+                Console.WriteLine($"It is my car's  {car.Make} and model {car.Model} was built in  {car.Year} and it has {car.EngineNoise} and honking noise {car.HonkNoise}");
             }
 
         }
